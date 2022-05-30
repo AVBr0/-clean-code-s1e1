@@ -46,7 +46,7 @@ li, h3 {
 input,button{
   outline:none;
 }
-button {
+.button {
   background: none;
   border: 0px;
   color: #888;
@@ -55,7 +55,7 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.button:hover {
   color: #3a3a3a;
 }
 /* Heading */
@@ -103,11 +103,11 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+.task-list > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.check {
   margin: 0 10px;
 }
 li > label {
@@ -116,15 +116,15 @@ li > label {
   font-size: 18px;
   width: 226px;
 }
-li >    .task__text {
+.task__text {
   width: 226px
 }
-button.delete img {
+.button.delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.button.delete img:hover {
   transform: rotateZ(0);
 }
 
