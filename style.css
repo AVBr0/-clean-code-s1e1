@@ -1,8 +1,9 @@
 /* Basic Style */
-body {
+.container {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
+  min-height: 100%;
 }
 .poster {
   width: 500px;
@@ -34,7 +35,8 @@ body {
 .todo-input-field {
   display: flex;
 }
-ul {
+#tasks-curr,
+#tasks-done {
   margin:0;
   padding: 0px;
 }
@@ -57,8 +59,7 @@ button:hover {
   color: #3a3a3a;
 }
 /* Heading */
-h3,
-label[for="add-task"] {
+.mark {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -67,7 +68,7 @@ label[for="add-task"] {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.task__text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -79,12 +80,12 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.task__text:focus {
   color: #333;
 }
 
 /* Add Task */
-label[for="add-task"] {
+.mark-block {
   display: block;
   margin: 0 0 20px;
 }
@@ -115,7 +116,7 @@ li > label {
   font-size: 18px;
   width: 226px;
 }
-li >    input[type="text"] {
+li >    .task__text {
   width: 226px
 }
 button.delete img {
@@ -134,11 +135,11 @@ ul#tasks-done label {
 }
 
 /* Edit Task */
-ul li input[type=text] {
+ul li .task__text {
   display:none
 }
 
-ul li.editMode input[type=text] {
+ul li.editMode .task__text {
   display:inline-block;
   width:224px
 }
