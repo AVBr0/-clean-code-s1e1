@@ -19,8 +19,11 @@
 }
 
 @media (max-width:768px) {
-.poster { text-align: center;
-}
+
+  .poster { 
+    text-align: center;
+  }
+
 }
 .todo {
   display: block;
