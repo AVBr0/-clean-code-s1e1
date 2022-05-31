@@ -9,7 +9,7 @@ h3 {
 }
 
 input,
-button{
+button {
   outline: none;
 }
 
@@ -151,13 +151,13 @@ button{
   width: 226px;
 }
 
-.button.valid-task__button-delete img {
+.btn-icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.button.valid-task__button-delete img:hover {
+.btn-icon:hover {
   transform: rotateZ(0);
 }
 
