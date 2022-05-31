@@ -29,19 +29,19 @@
 
 }
 
-.todo {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
-.task {
+.li__task {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
 
-.todo-input-field {
+.label__todo-input-field {
   display: flex;
 }
 
@@ -76,7 +76,7 @@ button{
 }
 
 /* Heading */
-.mark {
+.section__mark {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -86,7 +86,7 @@ button{
   text-transform: uppercase;
 }
 
-.task__text {
+.input__task-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -99,12 +99,12 @@ button{
   color: #888;
 }
 
-.task__text:focus {
+.input__task-text:focus {
   color: #333;
 }
 
 /* Add Task */
-.mark-block {
+.section__mark-block {
   display: block;
   margin: 0 0 20px;
 }
@@ -123,11 +123,11 @@ li {
   align-items: center;
 }
 
-.task-list > * {
+.ul__task-list > * {
   vertical-align: middle;
 }
 
-.check {
+.li__check {
   margin: 0 10px;
 }
 
@@ -138,17 +138,17 @@ li > label {
   width: 226px;
 }
 
-.task__text {
+.input__task-text {
   width: 226px;
 }
 
-.button.delete img {
+.button.button__delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.button.delete img:hover {
+.button.button__delete img:hover {
   transform: rotateZ(0);
 }
 
@@ -159,11 +159,11 @@ ul#tasks-done label {
 }
 
 /* Edit Task */
-ul li .task__text {
+ul li .input__task-text {
   display: none;
 }
 
-ul li.editMode .task__text {
+ul li.editMode .input__task-text {
   display: inline-block;
   width: 224px;
 }
