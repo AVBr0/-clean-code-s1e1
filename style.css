@@ -1,4 +1,3 @@
-/* Basic Style */
 .container {
   background-color: #f8f8f8;
   color: #333;
@@ -109,12 +108,12 @@ button{
   margin: 0 0 20px;
 }
 
-input#add-task {
+#add-task {
     width: 318px;
 }
 
 /* Task list */
-li {
+.ul__task-list {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -131,7 +130,7 @@ li {
   margin: 0 10px;
 }
 
-li > label {
+.li__labels {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
@@ -153,13 +152,13 @@ li > label {
 }
 
 /* Completed */
-ul#tasks-done label {
+#tasks-done .li__task {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li .input__task-text {
+.ul__task-list .input__task-text {
   display: none;
 }
 
@@ -168,6 +167,6 @@ ul li .input__task-text {
   width: 224px;
 }
 
-.ul__edit-mode label {
+.ul__edit-mode .li__labels {
   display: none;
 }
