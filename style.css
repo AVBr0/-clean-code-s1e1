@@ -6,24 +6,24 @@
   min-height: 100%;
 }
 
-.poster {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.poster img {
+.header img {
   width: 100%;
 }
 
-.poster .poster__info {
+.header .header__info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .poster { 
+  .header { 
     text-align: center;
   }
 
