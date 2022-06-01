@@ -20,7 +20,7 @@ button {
   min-height: 100%;
 }
 
-.wrapper__header {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
@@ -35,9 +35,9 @@ button {
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
-  .wrapper__header { 
+  .header { 
     text-align: center;
   }
 
@@ -84,7 +84,7 @@ button {
 }
 
 /* Heading */
-.section__header {
+.input-header {
   color: #333;
   font-weight: 700;
   font-size: 15px;
